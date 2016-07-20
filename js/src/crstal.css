@@ -1,0 +1,42 @@
+.vakata-context { 
+ z-index:2999 !important; 
+}
+
+.widget-text { width: 500px !important; }
+.widget-label { min-width:35ex !important;  }
+.widget-textarea  { width: auto; }
+.widget-tenor-text{width:140px;margin:0 !important}
+.widget-tenorlistbox{width:140px;margin-bottom:0}
+
+.flot-container {
+	box-sizing: border-box;
+	width: 850px;
+	height: 450px;
+	padding: 20px 15px 15px 15px;
+	margin: 15px auto 30px auto;
+	border: 1px solid #ddd;
+	background: #fff;
+	background: linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+	-o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.flotwrapper { position: relative; width: 800px; margin: auto; margin-top: 20px; font-size: 12pt; }
+.flottitle { color: #888; margin-left: 50px; }
+.flotgraph { position: relative; margin-top: 20px; }
+.flotlegend { position: absolute; right: 0; }
+.flotplot { width: 540px; height: 300px; }
+.handsonplot { overflow-y: auto; overflow-x: auto; height: 300px; max-width: 500px}
+.handsontable col.rowHeader {  width: 250px; }
+.container { width:95%; }
+.generictree{ max-width : 450px; overflow-y: auto; max-height: 700px; padding : 5px; border-style:outset }
+.genericframe{ padding : 5px; border-style:outset }
+.rightframe{ max-width: 1050px; overflow-y: auto; max-height: 700px }
+.mainframe{ padding: 5px; border-style:outset; background:#b7c0d2 }
+#header-container{background-color:#0a0a0a;background-image:url("crstal.png");background-repeat: no-repeat;min-height: 70px; color:#d5d8f1}
