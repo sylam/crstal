@@ -1,12 +1,14 @@
 var version = require('./package.json').version;
+var webpack = require('webpack');
 
 // Custom webpack loaders are generally the same for all webpack bundles, hence
 // stored in a separate local variable.
-var loaders = [
-    { test: /\.json$/, loader: 'json-loader' },
+var loaders = [    
+    { test: /\.css$/, loader: "style-loader!css-loader" },    
+    { test: /\.json$/, loader: "json-loader" },
+    { test: /\.(jpg|png|gif)$/, loader: "file" }
 ];
-
-
+   
 module.exports = [
     {// Notebook extension
      //
@@ -30,6 +32,19 @@ module.exports = [
      // It must be an amd module
      //
         entry: './src/index.js',
+        plugins: [
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery"
+            })
+        ],
+        resolve: {
+            alias: {
+                handsontable$: "handsontable/dist/handsontable.full.js",
+                flottime: "flot/jquery.flot.time.js",
+                flotnavigate: "flot/jquery.flot.navigate.js"
+            }
+        },
         output: {
             filename: 'index.js',
             path: '../crstal/static',
@@ -55,7 +70,7 @@ module.exports = [
      // The target bundle is always `dist/index.js`, which is the path required
      // by the custom widget embedder.
      //
-        entry: './src/embed.js',
+        entry: './src/index.js',
         output: {
             filename: 'index.js',
             path: './dist/',
