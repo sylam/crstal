@@ -1,7 +1,7 @@
 crstal
 ===============================
 
-An Interactive Tree View Widget Library
+The Cuda Risk Simulation & Trading Analytic Library is a quantitative framework for Counterparty risk and xVA's using nvidia's cuda framework. An interactive widget set is also provided as a jupyter notebook extension.
 
 Installation
 ------------
