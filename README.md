@@ -14,7 +14,7 @@ To install use pip:
 
 For a development installation (requires npm),
 
-    $ git clone https://github.com/crstal/crstal.git
+    $ git clone https://github.com/sylam/crstal.git
     $ cd crstal
     $ pip install -e .
     $ jupyter nbextension install --py --symlink --user crstal
